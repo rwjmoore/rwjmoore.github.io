@@ -5,10 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans';}
 body, html {
   height: 100%;
   color: #777;
@@ -25,8 +25,8 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('images/chief.jpg');
-  min-height: 100%;
+  background-image: url('images/Mt.Assiniboine.jpg');
+  min-height: 1500px;
 }
 
 /* Second image (Adventure) */
@@ -37,7 +37,7 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-2 {
-  background-image: url("images/couloir.jpg");
+  background-image: url("");
   min-height: 400px;
 }
 
@@ -62,7 +62,7 @@ img {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top-right">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -70,7 +70,7 @@ img {
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#cv" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CV</a>
-    <a href="adventure.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-o"></i> PROJECTS</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-o"></i> PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -81,7 +81,7 @@ img {
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#cv" class="w3-bar-item w3-button" onclick="toggleFunction()">CV</a>
-    <a href="adventure.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -89,16 +89,17 @@ img {
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RANDY <span class="w3-hide-small"></span> MOORE</span>
+  <div class="w3-display-top" style="white-space:nowrap;">
+    <span class="w3-display-top w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RANDY <span class="w3-hide-small"></span> MOORE</span>    
   </div>
+  <div>   class = ""</div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h2 class="w3-center">ABOUT</h2>
-  <p class="w3-center"><em>Master of Applied Science Student in Electrical and Computer Engineering</em></p>
-  <p>I am a MASc student in Electrical and Computer Engineering at the University of British Columbia, Vancouver, Canada, studying medical robotics and imaging with Prof. Tim Salcudean.</p>
+  <h2 >ABOUT</h2>
+  <p><em>Master of Applied Science Student in Electrical and Computer Engineering</em></p>
+  <p>I am an Engineer In Training (EIT) and MASc student in Electrical and Computer Engineering at the University of British Columbia, Vancouver, Canada, studying medical robotics and imaging with Professor. Tim Salcudean.</p>
 
   <p></p>
 
@@ -106,8 +107,8 @@ img {
     
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>I describe myself as a generalist with experience in software engineering, electrical engineering, and mechanical engineering. I enjoy tackling challenging problems guided by my core value of being thorough and efficient.</p>
+    <div class="w3-col m6 w3-hide-small ">
+      <p>I describe myself as a generalist with experience in software engineering, electrical engineering, and mechanical engineering. I enjoy tackling challenging problems guided by my core values of being thorough and efficient.</p>
       <p></p>
     </div>
   </div>
@@ -134,9 +135,9 @@ img {
 </div>
 
 <!-- Second Parallax Image with CV Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Curriculum Vitae</span>
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
   </div>
 </div>
 
@@ -158,32 +159,33 @@ img {
   </div>
 </div>
   <h3 id="education">Education</h3>
-  <p><img src="images/ubc_short.png" width="65" height="90">September 2022 - Present<br><em>University of British Columbia, Vancouver, Canada</em><br>MASc in Electrical and Computer Engineering<br>See <a href="courses.html">courses</a></p>
-  <p><img src="images/hamlyn.jpg" width="145" height="90">December 2023<br><em>Hamlyn Centre for Robotic Surgery, Imperial College, London</em><br>Hamlyn Winter School on Surgical Imaging and Vision</p>
-  <p><img src="images/hamlyn.jpg" width="145" height="90">August 2023<br><em>Institute of Image Guided Surgery, IHU Strasbourg, France</em><br>Surgical Data Science Summer School</p>
-  <p><img src="images/ubc_short.png" width="65" height="90">September 2018 - May 2022<br><em>University of Calgary, Calgary, Canada</em><br>Bachelor of Science in Electrical Engineering <br>See <a href="courses.html">courses</a><br><!-- See [transcript](https://github.com/dgblack/portfolio/raw/master/files/Transcript%20David%20Black%20Online.pdf)) /--></p>
+  <p><img src="images/ubc-logo.png" width="100" height="110">September 2022 - Present<br><em>University of British Columbia, Vancouver, Canada</em><br>MASc in Electrical and Computer Engineering<br>See <a href="courses.html">courses</a></p>
+  <p><img src="images/hamlyn_centre_for_robotic_surgery_logo.jpeg" width="145" height="90">December 2023<br><em>Hamlyn Centre for Robotic Surgery, Imperial College, London</em><br>Hamlyn Winter School on Surgical Imaging and Vision</p>
+  <p><img src="images/IHU.png" width="250" height="70">August 2023<br><em>Institute of Image Guided Surgery, IHU Strasbourg, France</em><br>Surgical Data Science Summer School</p>
+  <p><img src="images/UofC.jpg" width="100" height="80">September 2018 - May 2022<br><em>University of Calgary, Calgary, Canada</em><br>Bachelor of Science in Electrical Engineering <br>See <a href="courses.html">courses</a><br><!-- See [transcript](https://github.com/dgblack/portfolio/raw/master/files/Transcript%20David%20Black%20Online.pdf)) /--></p>
   <h3 id="work-experience">Work Experience</h3>
-  <p><img src="images/ank.jpg" width="115" height="40">May - September 2022<br><a href="ak.html">Electrical Engineer EIT, Orb Surgical Ltd./Project neuroArm</a></p>
-  <p><img src="images/rcl.jpg" width="60" height="60">May - August 2021<br><a href="rcl.html">Department of Surgery Student Researcher</a></p>
-  <p><img src="images/zeiss.jpg" width="60" height="60">January 2020 - January 2021<br><a href="zeiss.html">Dry Lab Engineer at iGEM Calgary</a></p>
-  <p><img src="images/bcsoc.png" width="60" height="60">May - April 2019<br>Grounds Member, Calgary Zoo</p>
-  <p><img src="images/mec.png" width="110" height="60">April - May 2017<br>Assistant Crew Leader - Parks and Labour Department - Chestermere, Alberta</p>
-  <p><img src="images/mec.png" width="110" height="60">April - May 2016<br>Machinery Operator - Parks and Labour Department - Chestermere, Alberta</p>
+  <p><img src="images/neuroArm+LOGO.jpg" width="120" height="30">May - September 2022<br><a href="https://neuroarm.org/">Electrical Engineer EIT, Orb Surgical Ltd./Project neuroArm</a></p>
+  <p><img src="images/UofC.jpg" width="100" height="80">May - August 2021<br><a href="https://github.com/rwjmoore/RemoteUltrasoundCode">Department of Surgery Student Researcher</a></p>
+  <p>January 2020 - January 2021<br><a href="https://cumming.ucalgary.ca/bhsc/current-students/igem">Dry Lab Engineer at iGEM Calgary</a></p>
+  <p>May - April 2019<br>Grounds Member, Calgary Zoo</p>
+  <p>April - May 2017<br>Assistant Crew Leader - Parks and Labour Department - Chestermere, Alberta</p>
+  <p>April - May 2016<br>Machinery Operator - Parks and Labour Department - Chestermere, Alberta</p>
   <h3 id="project-experience">Project Experience</h3>
   <p>Sept 2022 - Present<br><a href="ar.html">Ultrasound Image Guidance for Transoral Robotic Surgery</a> , UBC Robotics &amp; Control Lab</p>
-  <p>September 2021 - May 2022<br><a href="/files/eMBB_URLLC_Joint_Scheduling.pdf">Remote Prehospital Tissue Perfusion Monitoring System</a>, Capstone</p>  
-  <p>September 2021 - May 2022<br><a href="zeiss.html">ANDROMEDA Flight Computer for High-Powered Rocketry</a> , Student Organization for Aerospace Research</p>
-  <p>January 2020 - January 2021<br><a href="pet.html">Impedance-Based Vitamin A Deficiency Diagnostic Device</a> , iGEM Calgary</p>
+  <p>September 2021 - May 2022<br><a href="https://engineeringdesignfair.ucalgary.ca/electrical/pirfusix/">Remote Prehospital Tissue Perfusion Monitoring System</a>, Capstone</p>  
+  <p>September 2021 - May 2022<br><a href="https://github.com/rwjmoore/AndromedaFlightComputer">ANDROMEDA Flight Computer for High-Powered Rocketry</a> , Student Organization for Aerospace Research</p>
+  <p>January 2020 - January 2021<br><a href="https://2020.igem.org/Team:Calgary">Impedance-Based Vitamin A Deficiency Diagnostic Device</a> , iGEM Calgary</p>
 
   <h3 id="publications">Publications</h3>
   <ul>
-  <li> <p>TBD</p>
+  <li> <p>Randy Moore, Ryan Yeung, Wanwen Chen, Qi Zeng, Eitan Prisman, Septimiu Salcudean. Enabling Extracorporeal Ultrasound Imaging with the da Vinci Robot for Transoral Robotic Surgery – A Feasibility Study. IJCARS 2024.</p>
   </ul>
   </li>
 
   <h3 id="conferences">Conferences</h3>
   <ul>
-  <li> <p>TBD</p>
+  <li> <p>15th International Conference on Information Processing in Computer-Assisted 	2024
+    Interventions (Barcelona, Spain, Presented)</p>
   </li>
   </ul>
   <h3 id="awards">Awards</h3>
@@ -196,6 +198,9 @@ img {
   <li>Natural Sciences and Engineering Research Council of Canada CGSM Award, 2022<ul>
     <li> Nationwide competitive award granted to a Canadian graduate student based on academic excellence, research potential, and 
       interpersonal characteristics and qualities </li>
+  </ul>
+  <li>Canadian Society of Engineering Management Student of the Year Award, 2022<ul>
+    <li> Awarded annually to a single graduating student in the Schulich School of Engineering based on academic merit, extracurricular activities, technical and practical aptitude </li>
   </ul>
   <li>Archie and Hugh Bothner Bursary, 2021<ul>
   </ul>
@@ -219,13 +224,13 @@ img {
 
   <h3 id="leadership">Leadership</h3>
   <ul>
-  <li>Supervised a group of four fourth year undergraduate students in Engineering Physics for their capstone project in deep learning for fluorescence neurosurgery</li>
+  <li>Led a group of four undergraduate students to develop avionics system for solid and hybrid sounding rockets, successfully competing at the 2022 Spaceport America Cup in New Mexico</li>
   </ul>
 
   <h3 id="presentations">Presentations</h3>
   <ul>
-  <li>Guest Lecturer MDSC507: Special Problems in Medical Sciences<ul>
-  <li>2020</li>
+  <li>Guest Lecturer MDSC507: Special Problems in Medical Sciences at the University of Calgary<ul>
+ 
   </ul>
  
   </ul>
@@ -233,9 +238,9 @@ img {
   <p>In my freetime I am an avid fitness enthusiast with some of my favourite pass-times being weightlifting, backcountry hiking, snowboarding, rowing, and biking. I also try to keep up with my piano playing as a lover of jazz music and improvisation.</p>
 
     <p class="w3-large w3-center w3-padding-16">Skills:</p>
-  <p><i class="fa fa-laptop"></i>  MATLAB, Python, C#, C++, LaTeX, Linux, ROS, ROSBridge, da Vinci Research Kit, Unity, Microsoft Mixed Reality Toolkit, WebSocket, WebRTC, CAD (SolidWorks, Fusion 360, OnShape), FEA (ANSYS, Solidworks), Microcontrollers (Arduino, Raspberry Pi, STM32), LTSpice</p>
+  <p><i class="fa fa-laptop"></i>  MATLAB, Python, C#, C++, LaTeX, Linux, ROS, ROSBridge, da Vinci Research Kit, Unity, Microsoft Mixed Reality Toolkit, WebSocket, WebRTC, CAD (SolidWorks, Fusion 360), Microcontrollers (Arduino, Raspberry Pi, STM32), LTSpice</p>
  
-  <p><i class="fa fa-laptop"></i>  Computer Vision, Reinforcement Learning, Machine Learning, Android Studio, C, PCB Design (Altium, KiCAD), Communication (Networking, SPI, I2C, UART, BLE, TCP/IP, 5G)</p>
+  <p><i class="fa fa-laptop"></i>  Computer Vision, Reinforcement Learning, Machine Learning, C, PCB Design (Altium), Communication (SPI, I2C, UART, BLE, TCP/IP)</p>
   
   <p><i class="fa fa-laptop"></i> Julia, Assembly Language, VHDL</p>
   
@@ -255,7 +260,7 @@ img {
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="images/UBC.png" class="w3-image w3-round" style="width:100%">
+      <img src="images/WestCoastTrail.JPG" class="w3-image w3-round" style="width:100%">
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
