@@ -57,6 +57,16 @@ img {
   border: 0px solid black;
   margin: 0px 10px 0px 0px;
 }
+
+.adventure-preview {
+  border-left: 6px solid #222;
+  padding: 24px;
+  background: #f5f5f5;
+}
+
+.adventure-cta {
+  margin-top: 18px;
+}
 </style>
 </head>
 <body>
@@ -71,6 +81,7 @@ img {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#cv" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CV</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cog"></i> PROJECTS</a>
+    <a href="adventures.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-camera"></i> ADVENTURES</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -82,6 +93,7 @@ img {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#cv" class="w3-bar-item w3-button" onclick="toggleFunction()">CV</a>
     <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="adventures.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ADVENTURES</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -90,184 +102,175 @@ img {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-top" style="white-space:nowrap;">
-    <span class="w3-display-top w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RANDY <span class="w3-hide-small"></span> MOORE</span>    
+    <span class="w3-display-top w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RANDY <span class="w3-hide-small"></span> MOORE</span>
   </div>
-  <div>  </div>
+  <div></div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h2 >ABOUT</h2>
-  
-  <p><em>Randy Moore, Master of Applied Science in Electrical and Computer Engineering, Engineer in Training</em></p>
-  <p>I am an Engineer In Training (EIT) and MASc graduate from the Electrical and Computer Engineering program at the University of British Columbia, Vancouver, Canada, where I studied medical robotics and imaging with <a href="https://ece.ubc.ca/tim-salcudean/">Professor. Tim Salcudean</a>. I have a broad range of 
-    experiences working in large, system design for aerospace projects, clinical projects, and research organizations. At my core, I am a problem solver. 
-  </p>
+  <h2>ABOUT</h2>
 
-  <p></p>
+  <p><em>Randy Moore, Master of Applied Science in Electrical and Computer Engineering, Engineer in Training</em></p>
+  <p>I am an Engineer In Training (EIT) and MASc graduate from the Electrical and Computer Engineering program at the University of British Columbia, Vancouver, Canada, where I studied medical robotics and imaging with <a href="https://ece.ubc.ca/tim-salcudean/">Professor. Tim Salcudean</a>. I have a broad range of experiences working in large, system design for aerospace projects, clinical projects, and research organizations. At my core, I am a problem solver.</p>
 
   <div class="w3-row">
-    
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small ">
+    <div class="w3-col m6 w3-hide-small">
       <p>I describe myself as a generalist with experience in software engineering, electrical engineering, and mechanical engineering. I enjoy tackling challenging problems guided by my core values of being thorough and efficient.</p>
-      <p></p>
     </div>
   </div>
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-</div>
-
-<!-- Second Parallax Image with CV Text -->
-<div class="w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide"></span>
-  </div>
-</div>
+<div class="w3-row w3-center w3-dark-grey w3-padding-16"></div>
 
 <!-- Container (CV Section) -->
 <div class="w3-content w3-container w3-padding-64" id="cv">
   <h2 class="w3-center">CURRICULUM VITAE</h2>
   <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <a href="#education"><span class="w3-xlarge fa fa-university"></span><br>Education & Experience </a>
+    <div class="w3-quarter w3-section">
+      <a href="#education"><span class="w3-xlarge fa fa-university"></span><br>Education &amp; Experience</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <a href="#publications"><span class="w3-xlarge fa fa-file-text"></span><br>Publications</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <a href="#awards"><span class="w3-xlarge fa fa-trophy"></span><br>Awards</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <a href="#other"><span class="w3-xlarge fa fa-laptop"></span><br>Skills</a>
+    </div>
   </div>
-  <div class="w3-quarter w3-section">
-    <a href="#publications"><span class="w3-xlarge fa fa-file-text"></span><br>Publications</a>
-  </div>
-  <div class="w3-quarter w3-section">
-    <a href="#awards"><span class="w3-xlarge fa fa-trophy"></span><br>Awards</a>
-  </div>
-  <div class="w3-quarter w3-section">
-    <a href="#other"><span class="w3-xlarge fa fa-laptop"></span><br>Skills</a>
-  </div>
-</div>
   <h3 id="education">Education</h3>
   <p><img src="images/ubc-logo.png" width="80" height="90">September 2022 - October 2024<br><em>University of British Columbia, Vancouver, Canada</em><br>MASc in Electrical and Computer Engineering<br></p>
   <p><img src="images/hamlyn_centre_for_robotic_surgery_logo.jpeg" width="90" height="80">December 2023<br><em>Hamlyn Centre for Robotic Surgery, Imperial College, London</em><br>Hamlyn Winter School on Surgical Imaging and Vision</p>
   <p><img src="images/IHU.png" width="200" height="50">August 2023<br><em>Institute of Image Guided Surgery, IHU Strasbourg, France</em><br>Surgical Data Science Summer School</p>
   <p><img src="images/UofC.jpg" width="100" height="80">September 2018 - May 2022<br><em>University of Calgary, Calgary, Canada</em><br>Bachelor of Science in Electrical Engineering with a Minor in Biomedical Engineering<br><br></p>
+
   <h3 id="work-experience">Work Experience</h3>
+  <p>December 2024 - Present<br><a href="https://www.northvectordynamics.com/">Software Development Lead, North Vector Dynamics</a><br></p>
   <p><img src="images/neuroArm+LOGO.jpg" width="120" height="30">May - September 2022<br><a href="https://neuroarm.org/">Electrical Engineer EIT, Orb Surgical Ltd./Project neuroArm</a><br>Supervisor: Dr. Garnette Sutherland</p>
   <p><img src="images/UofC.jpg" width="100" height="80">May - August 2021<br><a href="https://github.com/rwjmoore/RemoteUltrasoundCode">Department of Surgery Student Researcher</a><br> Supervisor: Dr. Paul B. McBeth</p>
   <p>January 2020 - January 2021<br><a href="https://cumming.ucalgary.ca/bhsc/current-students/igem">Dry Lab Engineer at iGEM Calgary</a></p>
   <p>May - April 2019<br>Grounds Member, Calgary Zoo</p>
   <p>April - May 2017<br>Assistant Crew Leader - Parks and Labour Department - Chestermere, Alberta</p>
   <p>April - May 2016<br>Machinery Operator - Parks and Labour Department - Chestermere, Alberta</p>
+
   <h3 id="projects">Project Experience</h3>
 
-  <p id="autocam">January 2024 - Ongoing<br><u>Autonomous Camera System for Minimally Invasive Robotics</u> , Robotics &amp; Control Lab, The University of British Columbia<br>
-  The da Vinci Surgical Robot uses a 4-Degree of Freedom (DOF) manipulator to place an endoscopic camera inside a patient. However, anatomy can be better viewed using an additional point of view and a more dexterous camera. This project involved the design of a 
-  controller that uses the additional 7-DOF arm on the da Vinci robot to place an additional camera autonomously, and assesses its impact on surgical performance. Strategies investigated for autonomy include classical control and tracking as well as deep learning using
-  eye-gaze data and robot kinematics. </p> 
+  <p id="nvd">December 2024 - Present <br><u>Counter-Unmanned-Aerial-System (CUAS) Software Development Lead</u>, North Vector Dynamics<br>
+  Primary developer of the software stack at North Vector Dynamics, designing flight controller hardware and software for CUAS systems. Developed guidance, navigation, and control algorithms spanning sensor fusion, calibration and image guidance. Designed and conducted field tests for evaluating the CUAS system.</p>
 
-  <p>Sept 2022 - Oct 2024<br><a href="https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0445560">Ultrasound Image Guidance for Transoral Robotic Surgery</a> , Robotics &amp; Control Lab, The University of British Columbia<br>
+  <p id="autocam">January 2024 - January 2025<br><a href="https://arxiv.org/abs/2505.10398">Autonomous Camera System for Minimally Invasive Robotics</a>, Robotics &amp; Control Lab, The University of British Columbia<br>
+  The da Vinci Surgical Robot uses a 4-Degree of Freedom (DOF) manipulator to place an endoscopic camera inside a patient. However, anatomy can be better viewed using an additional point of view and a more dexterous camera. This project involved the design of a controller that uses the additional 7-DOF arm on the da Vinci robot to place an additional camera autonomously, and assesses its impact on surgical performance. Strategies investigated for autonomy include classical control and tracking as well as deep learning using eye-gaze data and robot kinematics.</p>
+
+  <p>Sept 2022 - Oct 2024<br><a href="https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0445560">Ultrasound Image Guidance for Transoral Robotic Surgery</a>, Robotics &amp; Control Lab, The University of British Columbia<br>
   For my masters thesis I investigated ways to introduce ultrasound image guidance into transoral robotic surgery targeting base of tongue and tonsillar tumours. This thesis details the development of two intraoperative teleoperation strategies for ultrasound imaging, including haptic feedback.
-  A soft-real-time C++ program was written to interface with the clinical da Vinci robot as well as a Mixed Reality application in C# using Unity for the HoloLens2.</p> 
-  
-  <p>September 2021 - May 2022<br><a href="https://engineeringdesignfair.ucalgary.ca/electrical/pirfusix/">Remote Prehospital Tissue Perfusion Monitoring System</a>, Capstone<br>
-  After shadowing a trauma surgeon, I identified a need for prehospital monitoring of patients, leading to the development of a prehospital monitoring platform to provide trauma surgeons with critical patient vitals during patient transit to the hospital. My role in this project was overall system design and the design of a <a href="https://github.com/rwjmoore/pIRfusiX-Sensor">wearable sensor PCB</a> that performs Near Infrared Spectroscopy to measure tissue perfusion. </p>  
+  A soft-real-time C++ program was written to interface with the clinical da Vinci robot as well as a Mixed Reality application in C# using Unity for the HoloLens2.</p>
 
-  <p>May 2021 - August 2021<br><a href="https://github.com/rwjmoore/RemoteUltrasoundCode">Satellite-Enabled Remote Ultrasound Telementoring</a> , Department of Surgery, University of Calgary<br>
-    This project aims to address the incoming need for infrastructure and evidence needed to implement telehealth in light of improved satellite communications. StarLink is set to revolutionize how we access the internet. Before utilizing this resource to improve healthcare delivery in remote regions, proof is needed of it's utility, and a plan is needed for its implementation.</p>
-  
-  <p>September 2021 - May 2022<br><a href="https://github.com/rwjmoore/AndromedaFlightComputer">ANDROMEDA Flight Computer for High-Powered Rocketry</a> , Student Organization for Aerospace Research<br>
+  <p>September 2021 - May 2022<br><a href="https://engineeringdesignfair.ucalgary.ca/electrical/pirfusix/">Remote Prehospital Tissue Perfusion Monitoring System</a>, Capstone<br>
+  After shadowing a trauma surgeon, I identified a need for prehospital monitoring of patients, leading to the development of a prehospital monitoring platform to provide trauma surgeons with critical patient vitals during patient transit to the hospital. My role in this project was overall system design and the design of a <a href="https://github.com/rwjmoore/pIRfusiX-Sensor">wearable sensor PCB</a> that performs Near Infrared Spectroscopy to measure tissue perfusion.</p>
+
+  <p>May 2021 - August 2021<br><a href="https://github.com/rwjmoore/RemoteUltrasoundCode">Satellite-Enabled Remote Ultrasound Telementoring</a>, Department of Surgery, University of Calgary<br>
+    This project aims to address the incoming need for infrastructure and evidence needed to implement telehealth in light of improved satellite communications. StarLink is set to revolutionize how we access the internet. Before utilizing this resource to improve healthcare delivery in remote regions, proof is needed of its utility, and a plan is needed for its implementation.</p>
+
+  <p>September 2021 - May 2022<br><a href="https://github.com/rwjmoore/AndromedaFlightComputer">ANDROMEDA Flight Computer for High-Powered Rocketry</a>, Student Organization for Aerospace Research<br>
   Flight computer developed for the solid rocket Osprey (10,000 ft) and hybrid rocket Ouroboros (30,000ft), flown at the Spaceport America Cup New Mexico in 2022</p>
 
-  <p>January 2020 - January 2021<br><a href="https://2020.igem.org/Team:Calgary">Impedance-Based Vitamin A Deficiency Diagnostic Device</a> , iGEM Calgary<br>
-  Vitamin A deficiency (VAD) is a leading cause of childhood mortality and blindness. I lead the design of a field-based test which utilizes aptamers to quantify retinol binding protein concentrations in the blood. These concentrations can then be correlated to Vitamin A concentrations, enabling communities to detect VAD effectively. 
-  This work resulted in placing amongst the top 5 teams worldwide at the International Genetically Engineered Machine (iGEM) Competition.  </p>
+  <p>January 2020 - January 2021<br><a href="https://2020.igem.org/Team:Calgary">Impedance-Based Vitamin A Deficiency Diagnostic Device</a>, iGEM Calgary<br>
+  Vitamin A deficiency (VAD) is a leading cause of childhood mortality and blindness. I lead the design of a field-based test which utilizes aptamers to quantify retinol binding protein concentrations in the blood. These concentrations can then be correlated to Vitamin A concentrations, enabling communities to detect VAD effectively.
+  This work resulted in placing amongst the top 5 teams worldwide at the International Genetically Engineered Machine (iGEM) Competition.</p>
 
-  <p>September 2019 - May 2020<br><a href="https://github.com/rwjmoore/SourceSelector">Seamless Power Source Selection Solution for High-Powered Rocketry</a> , Student Organization for Aerospace Research<br>
+  <p>September 2019 - May 2020<br><a href="https://github.com/rwjmoore/SourceSelector">Seamless Power Source Selection Solution for High-Powered Rocketry</a>, Student Organization for Aerospace Research<br>
     A modular power management solution for facilitating seamless switching between ground systems, main battery, backup battery, and recovery-battery power for a high-powered rocket during its launch cycle.</p>
-  
+
   <h3 id="publications">Publications</h3>
   <ul>
-  <li> <p>Zijian Wu, Adam Schmidt, Randy Moore, Haoying Zhou, Alexandre Banks, Peter Kazanzides, Septimiu E. Salcudean. “SurgPose: a Dataset for Articulated Robotic Surgical Tool Pose Estimation and Tracking”. 2025 IEEE International Conference on Robotics and Automation (ICRA) (Submitted)</p>
-
-  <li> <p>Randy Moore, Ryan Yeung, Wanwen Chen, Qi Zeng, Eitan Prisman, Septimiu Salcudean. Enabling Extracorporeal Ultrasound Imaging with the da Vinci Robot for Transoral Robotic Surgery – A Feasibility Study. IJCARS 2024. DOI:<a href="https://doi.org/10.1007/s11548-024-03160-9"> 10.1007/s11548-024-03160-9</a></p>
+    <li><p>Douglas Hamilton, Sandeep (Sonny) S Kohli, Paul McBeth, Randy Moore, Keltie Hamilton, Andrew W Kirkpatrick. “Low earth orbit communication satellites: A positively disruptive technology that could change the delivery of health care in rural and northern canada”. Journal of Medical Internet Research. DOI: <a href="https://www.jmir.org/2025/1/e46113/">jmir.org/2025/1/e46113</a> </p></li>
+    <li><p>Alexandre Banks, Randy Moore, Sayem Nazmuz Zaman, Alaa Eldin Abdelaal, Septimiu E Salcudean. “AutoCam: Hierarchical path planning for an autonomous auxiliary camera in surgical robotics”. arXiv. DOI: <a href="https://arxiv.org/abs/2505.10398">arxiv.org/abs/2505.10398</a> </p></li>
+    <li><p>Zijian Wu, Adam Schmidt, Randy Moore, Haoying Zhou, Alexandre Banks, Peter Kazanzides, Septimiu E. Salcudean. “SurgPose: a Dataset for Articulated Robotic Surgical Tool Pose Estimation and Tracking”. 2025 IEEE International Conference on Robotics and Automation (ICRA) (Submitted)</p></li>
+    <li><p>Randy Moore, Ryan Yeung, Wanwen Chen, Qi Zeng, Eitan Prisman, Septimiu Salcudean. Enabling Extracorporeal Ultrasound Imaging with the da Vinci Robot for Transoral Robotic Surgery – A Feasibility Study. IJCARS 2024. DOI:<a href="https://doi.org/10.1007/s11548-024-03160-9">10.1007/s11548-024-03160-9</a></p></li>
   </ul>
-  </li>
 
   <h3 id="conferences">Conferences</h3>
   <ul>
-  <li> <p>15th International Conference on Information Processing in Computer-Assisted Interventions 2024 (Barcelona, Spain, Presented)</p>
-  </li>
+    <li><p>15th International Conference on Information Processing in Computer-Assisted Interventions 2024 (Barcelona, Spain, Presented)</p></li>
   </ul>
+
   <h3 id="awards">Awards</h3>
   <ul>
-  <li>Affiliated Fellowship UBC - Elwyn Gregg, 2023<ul>
-    <li>Competitive award granted to two students at the University of British Columbia based on academic merit, research potential, and interpersonal characteristics</li>
+    <li>Affiliated Fellowship UBC - Elwyn Gregg, 2023
+      <ul>
+        <li>Competitive award granted to two students at the University of British Columbia based on academic merit, research potential, and interpersonal characteristics</li>
+      </ul>
+    </li>
+    <li>Graduate Student Award UBC, 2022</li>
+    <li>Natural Sciences and Engineering Research Council of Canada CGSM Award, 2022
+      <ul>
+        <li>Nationwide competitive award granted to a Canadian graduate student based on academic excellence, research potential, and interpersonal characteristics and qualities</li>
+      </ul>
+    </li>
+    <li>Canadian Society of Engineering Management Student of the Year Award, 2022
+      <ul>
+        <li>Awarded annually to a single graduating student in the Schulich School of Engineering based on academic merit, extracurricular activities, technical and practical aptitude</li>
+      </ul>
+    </li>
+    <li>Archie and Hugh Bothner Bursary, 2021</li>
+    <li>Cumming School of Medicine Department of Surgery, Research and Education Development Fund, 2021</li>
+    <li>Best Hardware Project Nominee iGEM 2021
+      <ul>
+        <li>One of five global nominees at the international iGEM competition selected for best hardware</li>
+      </ul>
+    </li>
+    <li>PURE Research Award, 2020
+      <ul>
+        <li>Awarded to pursue a self-conceptualized researched project</li>
+      </ul>
+    </li>
+    <li>Engineering Society Memorial Award, 2019
+      <ul>
+        <li>Competitive award based on academic merit alongside extracurricular activities</li>
+      </ul>
+    </li>
   </ul>
-  <li>Graduate Student Award UBC, 2022<ul>
-  </ul>
-  <li>Natural Sciences and Engineering Research Council of Canada CGSM Award, 2022<ul>
-    <li> Nationwide competitive award granted to a Canadian graduate student based on academic excellence, research potential, and 
-      interpersonal characteristics and qualities </li>
-  </ul>
-  <li>Canadian Society of Engineering Management Student of the Year Award, 2022<ul>
-    <li> Awarded annually to a single graduating student in the Schulich School of Engineering based on academic merit, extracurricular activities, technical and practical aptitude </li>
-  </ul>
-  <li>Archie and Hugh Bothner Bursary, 2021<ul>
-  </ul>
-  <li>Cumming School of Medicine Department of Surgery, Research and Education Development Fund, 2021 <ul>
-  </ul>
-  <li>Best Hardware Project Nominee iGEM 2021<ul>
-    <li> One of five global nominees at the international iGEM competition selected for best hardware</li>
-  </ul>
-  <li>PURE Research Award, 2020 <ul>
-    <li>Awarded to pursue a self-conceptualized reserached project </li>
-  </ul>
-  <li>Engineering Society Memorial Award, 2019 <ul>
-    <li> Competitive award based on academic merit alongside extracurricular activities</li>
-  </ul>
-
-
-
-  </li>
-  
-  </ul>
-
-
 
   <h3 id="volunteering">Volunteering</h3>
   <ul>
-    <li>Medical Robotics Journal Club Co-Chair, The University of British Columbia, January 2024 – June 2024 </li>
-
-    <li>Friendly Visitor, Peter Lougheed Hospital, August 2019 – 2022 </li>
+    <li>Medical Robotics Journal Club Co-Chair, The University of British Columbia, January 2024 – June 2024</li>
+    <li>Friendly Visitor, Peter Lougheed Hospital, August 2019 – 2022</li>
   </ul>
 
   <h3 id="presentations">Presentations</h3>
   <ul>
-  <li>Guest Lecturer MDSC507: Special Problems in Medical Sciences at the University of Calgary<ul>
- 
+    <li>Guest Lecturer MDSC507: Special Problems in Medical Sciences at the University of Calgary</li>
   </ul>
- 
-  </ul>
+
   <h3 id="other">Other</h3>
   <p>In my freetime I am an avid fitness enthusiast with some of my favourite pass-times being weightlifting, backcountry hiking, snowboarding, rowing, and biking. I enjoy playing both classical and jazz piano and am a huge science fiction fan.</p>
-  
-  
-   <h3> Technical Skills:</h3>
 
+  <h3>Technical Skills:</h3>
   <h4><i class="fa fa-laptop"></i> Software</h4>
-  <p>  MATLAB, Python, C#, C++, C, Linux, Robotic Operating System (ROS), Kinematics and Dynamics Library (KDL), da Vinci Research Kit (dVRK), Unity, Microsoft Mixed Reality Toolkit, WebSocket, CAD (SolidWorks, Fusion 360), Microcontrollers (Arduino, Raspberry Pi, STM32), LTSpice, Julia, Assembly Language, VHDL, TCP/IP</p>
+  <p>MATLAB, Python, C#, C++, C, Linux, Robotic Operating System (ROS), Kinematics and Dynamics Library (KDL), da Vinci Research Kit (dVRK), Unity, Microsoft Mixed Reality Toolkit, WebSocket, CAD (SolidWorks, Fusion 360), Microcontrollers (Arduino, Raspberry Pi, STM32), LTSpice, Julia, Assembly Language, VHDL, TCP/IP</p>
   <h4><i class="fa fa-android"></i> Autonomy</h4>
-  <p>  Computer Vision, Reinforcement Learning, Machine Learning, Classical Control, Modern Control</p>
-  
+  <p>Computer Vision, Reinforcement Learning, Machine Learning, Classical Control, Modern Control</p>
   <h4><i class="fa fa-wrench"></i> Hardware</h4>
-  <p>  PCB Design (Altium), Mixed Analog-Digital PCB Design, Electromagnetic Compatibility, Communication (SPI, I2C, UART)</p>  
- 
-  
-
+  <p>PCB Design (Altium), Mixed Analog-Digital PCB Design, Electromagnetic Compatibility, Communication (SPI, I2C, UART)</p>
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+<div class="w3-row w3-center w3-dark-grey w3-padding-16"></div>
+
+<!-- Adventures preview -->
+<div class="w3-content w3-container w3-padding-64" id="adventures-preview">
+  <h2 class="w3-center">ADVENTURES</h2>
+  <div class="adventure-preview">
+    <h3><i class="fa fa-tree"></i> Outside the office</h3>
+    <p>Checkout my adventures page if you are interested in what I get up to outside of the office!</p>
+    <div class="adventure-cta">
+      <a href="adventures.html" class="w3-button w3-black"><i class="fa fa-arrow-right"></i> Visit the Adventures Page</a>
+    </div>
+  </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16"></div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-30" id="contact">
@@ -280,7 +283,7 @@ img {
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> University of British Columbia, Vancouver, Canada<br>
-        <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://www.linkedin.com/in/rmoore22/">LinkedIn</a> <br>
+        <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://www.linkedin.com/in/rmoore22/">LinkedIn</a><br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="mailto:rwjmoore@ece.ubc.ca">Email Me</a><br>
       </div>
     </div>
@@ -294,19 +297,10 @@ img {
     <a href="https://github.com/rwjmoore"><i class="fa fa-github w3-hover-opacity"></i></a>
     <a href="https://linkedin.com/in/rmoore22"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p><a href="adventures.html" class="w3-hover-text-green">Adventures</a> | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
-// Change style of navbar on scroll
+<script>
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -317,7 +311,6 @@ function myFunction() {
     }
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {

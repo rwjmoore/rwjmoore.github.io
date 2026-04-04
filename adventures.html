@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Randy Moore | Adventures</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans';}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  background: #fbfbfb;
+}
+
+.hero-simple {
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 24px 70px;
+}
+
+.hero-kicker {
+  letter-spacing: 3px;
+  font-size: 13px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.hero-copy {
+  max-width: 760px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 28px;
+}
+
+.gallery-card {
+  background: white;
+  border: 1px solid #e7e7e7;
+}
+
+.gallery-photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-body {
+  padding: 22px;
+}
+
+.gallery-meta {
+  font-size: 14px;
+  color: #8a8a8a;
+  margin-bottom: 10px;
+}
+
+.info-list {
+  margin: 14px 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.info-list li {
+  margin-bottom: 6px;
+}
+
+.note-box {
+  background: white;
+  border: 1px solid #e7e7e7;
+  padding: 24px;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.nav-shell {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-inner {
+    padding-top: 72px;
+    padding-bottom: 56px;
+  }
+
+  .gallery-photo {
+    height: 220px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="nav-shell">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="index.html#cv" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CV</a>
+    <a href="index.html#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cog"></i> PROJECTS</a>
+    <a href="adventures_gallery.html" class="w3-bar-item w3-button w3-black"><i class="fa fa-camera"></i> ADVENTURES</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+</div>
+
+<header class="hero-simple">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="hero-kicker">Adventures</div>
+      <h1>A photo gallery of my trips</h1>
+      <p></p>
+    </div>
+  </div>
+</header>
+
+<div class="w3-content w3-container w3-padding-64">
+  <div class="gallery-grid">
+    <article class="gallery-card">
+      <img src="images/Mt.Assiniboine.jpg" alt="Mountain trip" class="gallery-photo">
+      <div class="gallery-body">
+        <div class="gallery-meta">Hike / Backcountry</div>
+        <h3>Mt. Assiniboine</h3>
+        <p>Backcountry hiking trip to UNESCO world heritage site, Mt. Assiniboine</p>
+        <ul class="info-list">
+          <li><strong>Date:</strong> June, 2020 </li>
+          <li><strong>Location:</strong> Mount Assiniboine Park, British Columbia, Canada</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="gallery-card">
+      <img src="images/adventures/WestCoastTrail.JPG" alt="WCT" class="gallery-photo">
+      <div class="gallery-body">
+        <div class="gallery-meta">Hike / Backcountry</div>
+        <h3>West Coast Trail</h3>
+        <p>This format keeps everything compact and photo-first. You can duplicate this card whenever you want to add another outing.</p>
+        <ul class="info-list">
+          <li><strong>Date:</strong> July, 2017</li>
+          <li><strong>Location:</strong> West Coast Trail, British Columbia, Canada</li>
+          <li><strong>Notes:</strong> 7 days, 75 KM</li>
+        </ul>
+      </div>
+    </article>
+
+   
+
+    <article class="gallery-card">
+      <img src="images/adventures/Assiniboine2025.png" alt="Assiniboine Pt2" class="gallery-photo">
+      <div class="gallery-body">
+        <div class="gallery-meta">Hiking / Backcountry</div>
+        <h3>Mt. Assiniboine - Part 2</h3>
+        <p>Use cards like this for climbing trips, long weekends, ski tours, or general travel. The structure stays the same and keeps the page consistent.</p>
+        <ul class="info-list">
+          <li><strong>Date:</strong> July, 2025</li>
+          <li><strong>Location:</strong> Mt. Assiniboine, British Columbia, Canada [The Nub summit]</li>
+          <li><strong>Info:</strong> 30 KM hike-in, 3 nights </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+</div>
+
+<footer class="w3-center w3-black w3-padding-48">
+  <p><a class="footer-link w3-text-white" href="index_gallery_update.html">Return to main site</a></p>
+  <div class="w3-xlarge w3-section">
+    <a href="https://github.com/rwjmoore"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://linkedin.com/in/rmoore22"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
